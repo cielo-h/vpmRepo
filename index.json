@@ -16,10 +16,11 @@
             "com.vrchat.avatars": ">=3.5.0",
             "net.narazaka.vrchat.avatar-menu-creater-for-ma": ">=1.0.0"
           },
-          "url": "https://github.com/cielo-h/ColorMenuGenerator/releases/download/1.0.0/vpm.cielo-h.colormenugenerator-1.0.1.zip"
+          "url": "https://github.com/cielo-h/ColorMenuGenerator/releases/download/1.0.1/vpm.cielo-h.colormenugenerator-1.0.1.zip"
         }
       }
     }
   }
 
 }
+
