@@ -1,0 +1,44 @@
+name: Regenerate VPM Index
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+  
+jobs:
+  generate:
+    name: Regenerate VPM Index
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/setup-python@v4
+        with:
+          python-version: '3.9'
+      
+      - uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+      
+      - name: Generate VPM Index
+        run: python generate_vpm_index.py
+        env:
+          GITHUB_REPOSITORY: ${{ github.repository }}
+      
+      - name: Check for changes
+        id: check_changes
+        run: |
+          if git diff --quiet index.json; then
+            echo "changed=false" >> $GITHUB_OUTPUT
+          else
+            echo "changed=true" >> $GITHUB_OUTPUT
+          fi
+      
+      - name: Commit and push if changed
+        if: steps.check_changes.outputs.changed == 'true'
+        uses: EndBug/add-and-commit@v9
+        with:
+          author_name: GitHub Action
+          author_email: github-actions[bot]@users.noreply.github.com
+          message: 'Regenerate VPM index.json'
+          add: 'index.json'
