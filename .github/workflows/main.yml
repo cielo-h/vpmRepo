@@ -1,9 +1,10 @@
 name: Regenerate VPM Index
+
 on:
   workflow_dispatch:
   push:
     branches:
-      - main
+      - master
   
 jobs:
   generate:
