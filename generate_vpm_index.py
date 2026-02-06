@@ -88,9 +88,10 @@ def scan_packages():
                     "versions": {}
                 }
             
-            # Generate URL
+            # Generate 
+            p_name = package_info.get('name').split('.')[-1]
             download_url = DOWNLOAD_URL_BASE.format(
-                plugin_name=package_info.get('name'),
+                plugin_name=p_name,
                 filename=filename
             )
             
