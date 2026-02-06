@@ -90,7 +90,7 @@ def scan_packages():
             
             # Generate URL
             download_url = DOWNLOAD_URL_BASE.format(
-                plugin_name=package_info.get('displayName'),
+                plugin_name=package_info.get('name'),
                 filename=filename
             )
             
