@@ -10,7 +10,7 @@ REPO_INFO = {
     "author": "cielo-h"
 }
 
-DOWNLOAD_URL_BASE = "https://github.com/cielo-h/{repo_name}/releases/download/{version}/{filename}"
+DOWNLOAD_URL_BASE = "https://raw.githubusercontent.com/cielo-h/vpmRepo/master/{plugin_name}/{filename}"
 
 def extract_version_from_filename(filename):
     """Extract version number from filename"""
@@ -88,12 +88,9 @@ def scan_packages():
                     "versions": {}
                 }
             
-            # Generate URL (assuming GitHub releases)
-            # Extract repository name (from environment variable or use default)
-            repo_name = os.environ.get('GITHUB_REPOSITORY', 'cielo-h/vpmRepo').split('/')[-1]
+            # Generate URL
             download_url = DOWNLOAD_URL_BASE.format(
-                repo_name=repo_name,
-                version=version,
+                plugin_name=package_info.get('displayName'),
                 filename=filename
             )
             
