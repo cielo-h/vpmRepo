@@ -56,6 +56,21 @@
             "name": "cielo-h",
             "url": "https://github.com/cielo-h"
           }
+        },
+        "1.1.0": {
+          "name": "vpm.cielo-h.blendshapeeditor",
+          "displayName": "BlendShapeEditor",
+          "version": "1.1.0",
+          "unity": "2019.4",
+          "description": "シーン内に存在するオブジェクトのBlendShapesを一覧で表示/設定するツール",
+          "url": "https://raw.githubusercontent.com/cielo-h/vpmRepo/master/blendshapeeditor/vpm.cielo-h.blendshapeeditor-1.1.0.zip",
+          "vpmDependencies": {
+            "com.vrchat.avatars": ">=3.5.0"
+          },
+          "author": {
+            "name": "cielo-h",
+            "url": "https://github.com/cielo-h"
+          }
         }
       }
     }
