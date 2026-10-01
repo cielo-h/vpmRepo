@@ -4,6 +4,42 @@
   "url": "https://cielo-h.github.io/vpmRepo/index.json",
   "author": "cielo-h",
   "packages": {
+    "vpm.cielo-h.colormenugenerator": {
+      "versions": {
+        "1.0.4": {
+          "name": "vpm.cielo-h.colormenugenerator",
+          "displayName": "Color Menu Generator",
+          "version": "1.0.4",
+          "unity": "2019.4",
+          "description": "シーン内のベースprefabと複数のバリエーションprefabからマテリアル変更メニューを生成するツール",
+          "url": "https://raw.githubusercontent.com/cielo-h/vpmRepo/master/colormenugenerator/vpm.cielo-h.colormenugenerator-1.0.4.zip",
+          "vpmDependencies": {
+            "com.vrchat.avatars": ">=3.5.0",
+            "net.narazaka.vrchat.avatar-menu-creater-for-ma": ">=1.0.0"
+          },
+          "author": {
+            "name": "cielo-h",
+            "url": "https://github.com/cielo-h"
+          }
+        },
+        "1.0.3": {
+          "name": "vpm.cielo-h.colormenugenerator",
+          "displayName": "Color Menu Generator",
+          "version": "1.0.3",
+          "unity": "2019.4",
+          "description": "シーン内のベースprefabと複数のバリエーションprefabからマテリアル変更メニューを生成するツール",
+          "url": "https://raw.githubusercontent.com/cielo-h/vpmRepo/master/colormenugenerator/vpm.cielo-h.colormenugenerator-1.0.3.zip",
+          "vpmDependencies": {
+            "com.vrchat.avatars": ">=3.5.0",
+            "net.narazaka.vrchat.avatar-menu-creater-for-ma": ">=1.0.0"
+          },
+          "author": {
+            "name": "cielo-h",
+            "url": "https://github.com/cielo-h"
+          }
+        }
+      }
+    },
     "vpm.cielo-h.blendshapeeditor": {
       "versions": {
         "1.0.0": {
@@ -15,26 +51,6 @@
           "url": "https://raw.githubusercontent.com/cielo-h/vpmRepo/master/blendshapeeditor/vpm.cielo-h.blendshapeeditor-1.0.0.zip",
           "vpmDependencies": {
             "com.vrchat.avatars": ">=3.5.0"
-          },
-          "author": {
-            "name": "cielo-h",
-            "url": "https://github.com/cielo-h"
-          }
-        }
-      }
-    },
-    "vpm.cielo-h.colormenugenerator": {
-      "versions": {
-        "1.0.3": {
-          "name": "vpm.cielo-h.colormenugenerator",
-          "displayName": "Color Menu Generator",
-          "version": "1.0.3",
-          "unity": "2019.4",
-          "description": "シーン内のベースprefabと複数のバリエーションprefabからマテリアル変更メニューを生成するツール",
-          "url": "https://raw.githubusercontent.com/cielo-h/vpmRepo/master/colormenugenerator/vpm.cielo-h.colormenugenerator-1.0.3.zip",
-          "vpmDependencies": {
-            "com.vrchat.avatars": ">=3.5.0",
-            "net.narazaka.vrchat.avatar-menu-creater-for-ma": ">=1.0.0"
           },
           "author": {
             "name": "cielo-h",
